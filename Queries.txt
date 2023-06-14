@@ -1,0 +1,12 @@
+create table Books(Book_Id int primary key NOT NULL, Book_Name varchar(100) NOT NULL, Category varchar(100), Author varchar(50), Publication varchar(50), Edition varchar(20), Price float check(Price > 0));
+
+
+insert into Books values(2005883, 'Gilead', 'Fiction', 'Marilynne Robinson', 'Farrar, Stratus and giroux', 'First', 145);
+insert into Books values(2261987, 'Spider Web', 'Detective and mystery stories', 'Charles Osborne/Agatha Christie', 'Norstedts forlog', 'First', 245);
+insert into Books values(6163831, 'The One Tree', 'American fiction', 'Stephen R. Donaldson', 'Del rey', 'First', 362);
+insert into Books values(6178731, 'Rage of angels', 'Fiction', 'Sidney Sheldon', 'William Morrow', 'First', 231);
+insert into Books values(6280897, 'The Four Loves', 'Christian life', 'Clive Staples Lewis', 'Geoffrey Bles', 'First', 229);
+insert into Books values(6280935, 'The Problem of Pain', 'Christian life', 'Clive Staples Lewis', 'Centenary press', 'First', 124);
+
+
+ALTER TABLE Books ADD COLUMN Review varchar(500);
